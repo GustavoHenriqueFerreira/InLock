@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace senai.inlock.webApi.Interfaces
 {
+    /// <summary>
+    /// Interface responsável pelo repositório JogoRepository
+    /// </summary>
     interface IJogoRepository
     {
         List<JogoDomain> Listar();

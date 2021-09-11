@@ -6,16 +6,21 @@ using System.Threading.Tasks;
 
 namespace senai.inlock.webApi.Interfaces
 {
+    /// <summary>
+    /// Interface responsável pelo repositório UsuarioRepository
+    /// </summary>
     interface IUsuarioRepository
     {
-        List<UsuarioDomain> Listar();
+        //List<UsuarioDomain> Listar();
 
-        UsuarioDomain BuscarPorId(int idUsuario);
+        //UsuarioDomain BuscarPorId(int idUsuario);
 
-        void Cadastrar(UsuarioDomain novoUsuario);
+        //void Cadastrar(UsuarioDomain novoUsuario);
 
-        void AtualizarIdUrl(int idUsuario, UsuarioDomain UsuarioAtualizado);
+        //void AtualizarIdUrl(int idUsuario, UsuarioDomain UsuarioAtualizado);
 
-        void Deletar(int idUsuario);
+        //void Deletar(int idUsuario);
+
+        UsuarioDomain BuscarPorEmailSenha(string email, string senha);
     }
 }

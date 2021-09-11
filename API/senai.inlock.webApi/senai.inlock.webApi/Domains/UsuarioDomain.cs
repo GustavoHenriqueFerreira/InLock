@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace senai.inlock.webApi.Domains
 {
+    /// <summary>
+    /// Classe que representa a entidade (tabela) Usuario
+    /// </summary>
     public class UsuarioDomain
     {
         public int idUsuario { get; set; }
@@ -13,6 +16,7 @@ namespace senai.inlock.webApi.Domains
         public int idTipoUser { get; set; }
 
         [Required(ErrorMessage = "Por favor informe o e-mail")]
+        [StringLength(200, MinimumLength = 10, ErrorMessage = "O campo senha precisa ter no mínimo 10 caracteres e máximo 200")]
         public string email { get; set; }
 
         [Required(ErrorMessage = "Por favor informe a senha")]
